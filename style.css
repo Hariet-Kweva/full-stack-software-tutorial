@@ -1,0 +1,123 @@
+:root{
+    --primary-color: #f2f5f6;
+    --text-dark:grey;
+    --text-light:light rgb(185, 184, 184);
+    --white:#ffffff;
+    --max-width:1200px;
+    --header-font:"lora",serif;
+
+
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.section_container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+img{
+    width: 100%;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    max-width:var(--max-width) ;
+    margin:auto ;
+    padding:1rem ;
+}
+
+.nav_links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.link a{
+    font-weight: 500;
+    color:var(--text-light);
+    transition: 0.3s;
+}
+.link a:hover{
+    color:var(--text-dark);
+}
+
+.nav_logo{
+    text-align: center;
+    cursor: pointer;
+}
+.nav_logo img{
+    margin: auto;
+    max-width: 120px;
+
+}
+.nav_logo h4{
+    font-size: 1.5rem;
+    font-family: var(--header-font);
+    letter-spacing: 2px;
+    color: var(--text-dark);
+}
+.nav_logo p{
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--text-light);
+
+}
+.header{
+    margin-bottom: 10rem;
+    background-image: url(Images/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header_container{
+    min-height: 600px;
+    position: relative;
+}
+
+.header_content{
+    position: absolute;
+    bottom: -10rem;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    border: 10px solid var(--white);
+
+}
+.header_content h4{
+    position: relative;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--text-light);
+}
+.header_content h4::before{
+    position:absolute;
+    content:"";
+    bottom: -1rem;
+    left: 0;
+    height: 2px;
+    width: 40px;
+    background-color: var(--text-light);
+}
+.header_content h1{
+    width: 100%;
+    max-width: 600px;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+}
+.header_content h1 span{
+    font-style: italic;
+}
